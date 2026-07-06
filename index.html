@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriGuide SG | Healthy Eating, Made Clear</title>
+    <meta
+      name="description"
+      content="NutriGuide SG is a student-friendly healthy eating guide designed to make better food choices easier, clearer, and more practical."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">NG</div>
+        <div>
+          <p class="brand-kicker">NutriGuide SG</p>
+          <p class="brand-subtitle">Healthy choices for busy students</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Simple. Practical. Evidence-based.</p>
+          <h1>Healthy eating guidance built for the pace of student life.</h1>
+          <p class="lead">
+            NutriGuide SG helps users make smarter everyday food choices with a calm,
+            non-judgmental experience that focuses on safe, clear, and realistic habits.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="about.html">Learn about the project</a>
+            <a class="button button-secondary" href="#what-we-do">See what we offer</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project highlights">
+          <div class="stat-card">
+            <span class="stat-label">Focus</span>
+            <strong>Healthy eating education</strong>
+            <p>Friendly guidance without medical claims or pressure.</p>
+          </div>
+          <div class="stat-grid">
+            <div>
+              <span class="stat-label">Audience</span>
+              <strong>16 to 25</strong>
+            </div>
+            <div>
+              <span class="stat-label">Style</span>
+              <strong>Clear and supportive</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="what-we-do">
+        <div class="section-heading">
+          <p class="eyebrow">What the site is for</p>
+          <h2>A clean landing space for your team’s nutrition workflow.</h2>
+          <p>
+            This homepage sets the tone for the rest of the NutriGuide SG system while your team later connects AI tools like n8n, Google AI Studio, DeepSeek, and Synthesia.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>Guided choices</h3>
+            <p>
+              Present healthier meal swaps, habit tips, and practical food options in a way that feels easy to follow.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Safe boundaries</h3>
+            <p>
+              Keep responses focused on general healthy eating advice, not diagnosis, treatment, or body-shaming.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Future-ready</h3>
+            <p>
+              Leave space for your teammates to connect workflows, automation, and AI-generated explanations later.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="ai-tools-placeholder">
+        <div class="ai-placeholder">
+          <div>
+            <p class="eyebrow">Coming soon</p>
+            <h2>AI tools will plug in here later.</h2>
+            <p>
+              This is the placeholder area for your future chatbot, reasoning workflow, prompt testing, and video support. For now, it marks the spot where the backend and AI integrations will connect.
+            </p>
+          </div>
+
+          <div class="ai-pill-list" aria-label="Future AI integrations">
+            <span class="ai-pill">n8n workflow</span>
+            <span class="ai-pill">DeepSeek reasoning</span>
+            <span class="ai-pill">Google AI Studio prompts</span>
+            <span class="ai-pill">Synthesia video</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ai-integration-config">
+        <div class="section-heading">
+          <p class="eyebrow">Integration placeholder</p>
+          <h2>Drop in your AI tool IDs here later.</h2>
+          <p>
+            This panel is just a front-end placeholder for the values your teammates may need when they connect n8n, Google AI Studio, DeepSeek, and Synthesia.
+          </p>
+        </div>
+
+        <form class="integration-form">
+          <label class="field">
+            <span>n8n webhook URL</span>
+            <input type="text" name="n8n-webhook" placeholder="https://your-n8n-instance/webhook/nutriguide" />
+          </label>
+
+          <label class="field">
+            <span>Google AI Studio model / project ID</span>
+            <input type="text" name="google-ai-id" placeholder="Enter model or project ID" />
+          </label>
+
+          <label class="field">
+            <span>DeepSeek endpoint or model name</span>
+            <input type="text" name="deepseek-id" placeholder="deepseek-reasoner or API endpoint" />
+          </label>
+
+          <label class="field">
+            <span>Synthesia template / video ID</span>
+            <input type="text" name="synthesia-id" placeholder="Enter template or video ID" />
+          </label>
+
+          <label class="field field-wide">
+            <span>Notes for the integration</span>
+            <textarea name="integration-notes" rows="4" placeholder="Example: use low temperature for factual answers, show fallback text for out-of-scope questions, keep all responses safe and non-medical."></textarea>
+          </label>
+        </form>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">How the experience should feel</p>
+          <h2>Supportive, local, and easy to trust.</h2>
+        </div>
+        <div class="quote-card">
+          <p>
+            “The goal is not to overwhelm users with nutrition jargon, but to make one better choice feel achievable today.”
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NutriGuide SG • A student project for healthy eating education</p>
+    </footer>
+  </body>
+</html>
