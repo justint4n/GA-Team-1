@@ -495,6 +495,10 @@ h3 {
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
+.chat-toggle.chat-toggle-hidden {
+  display: none;
+}
+
 .chat-toggle-icon {
   width: 100%;
   height: 100%;
