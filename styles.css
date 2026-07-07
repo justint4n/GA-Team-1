@@ -360,10 +360,6 @@ h3 {
   background: #ffffff;
 }
 
-.video-link {
-  margin: 1rem 0 0;
-}
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
