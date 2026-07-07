@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NutriGuide | Simple Nutrition Guidance</title>
+    <title>NutriGuide | Smarter Food Decisions, Made Human</title>
     <meta
       name="description"
-      content="NutriGuide is a clean, student-friendly website that makes healthy eating guidance easier to understand and prepares space for future chatbot support."
+      content="NutriGuide is a nutrition guidance product that helps students and busy adults make healthier food decisions with clear advice, meal support, and a live AI assistant."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="images/NutriGuide round.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="page-shell">
@@ -30,84 +30,122 @@
           />
           <span class="brand-copy">
             <span class="brand-name">NutriGuide</span>
-            <span class="brand-tagline">Simple food guidance for everyday life</span>
+            <span class="brand-tagline">Smarter food decisions, made human</span>
           </span>
         </a>
 
-        <nav class="site-nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
+          <a class="nav-cta" href="#planner">Try the planner</a>
         </nav>
       </header>
 
       <main id="main">
-        <section class="hero">
+        <section class="hero hero-home">
           <div class="hero-copy">
-            <p class="eyebrow">Clear, calm, and easy to use</p>
-            <h1>Healthy eating advice that feels simple from the first click.</h1>
+            <p class="eyebrow">AI nutrition guidance for everyday life</p>
+            <h1>Turn food confusion into confident daily choices.</h1>
             <p class="lead">
-              NutriGuide helps users understand better food choices without
-              making the experience feel overwhelming. The design focuses on clarity,
-              trust, and a layout that works smoothly with the live BotPress assistant.
+              NutriGuide helps people understand nutrition in plain language,
+              build healthier meal habits, and get instant support through a
+              branded AI assistant that feels approachable from the first tap.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#features">Explore features</a>
-              <a class="button button-secondary" href="about.html">Learn more</a>
+              <a class="button button-primary" href="#features">See how it works</a>
+              <a class="button button-secondary" href="#planner">Try a quick demo</a>
+            </div>
+
+            <div class="hero-trust">
+              <div>
+                <strong>Personalised</strong>
+                <span>Guidance for different goals and routines</span>
+              </div>
+              <div>
+                <strong>Accessible</strong>
+                <span>Clear, friendly language with no jargon overload</span>
+              </div>
+              <div>
+                <strong>Always on</strong>
+                <span>BotPress assistant embedded directly into the experience</span>
+              </div>
             </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Quick overview">
-            <div class="panel-card">
-              <p class="panel-label">What users get</p>
-              <h2>Practical nutrition support</h2>
-              <p>Simple explanations, healthier choices, and a friendly starting point.</p>
+          <aside class="hero-panel" aria-label="NutriGuide highlights">
+            <div class="spotlight-card">
+              <p class="panel-label">Launch snapshot</p>
+              <h2>A wellness tool built for real routines.</h2>
+              <p>
+                From meal planning and portion guidance to quick healthy swaps,
+                NutriGuide is designed to support small decisions that add up.
+              </p>
             </div>
 
-            <div class="panel-stats">
-              <div>
-                <span>Style</span>
-                <strong>Clean UI</strong>
-              </div>
-              <div>
-                <span>Focus</span>
-                <strong>Healthy habits</strong>
-              </div>
-              <div>
-                <span>Next step</span>
-                <strong>BotPress ready</strong>
-              </div>
+            <div class="metric-stack">
+              <article>
+                <span>Primary users</span>
+                <strong>Students and busy adults</strong>
+              </article>
+              <article>
+                <span>Core value</span>
+                <strong>Simple, actionable nutrition help</strong>
+              </article>
+              <article>
+                <span>Powered by</span>
+                <strong>BotPress + branded web experience</strong>
+              </article>
             </div>
           </aside>
         </section>
 
-        <section class="section" id="features">
+        <section class="section">
           <div class="section-heading">
-            <p class="eyebrow">Why this design works</p>
-            <h2>Built to feel lightweight, readable, and welcoming.</h2>
+            <p class="eyebrow">Why it stands out</p>
+            <h2>Designed like a product, not just a project page.</h2>
             <p>
-              The structure keeps information easy to scan while leaving enough flexibility
-              for future chatbot integration and extra content later on.
+              Every section reinforces the same brand story: calm guidance,
+              practical support, and an interface that makes healthy living
+              feel manageable.
             </p>
           </div>
 
-          <div class="card-grid">
+          <div class="card-grid feature-grid">
             <article class="info-card">
-              <h3>Simple guidance</h3>
+              <span class="card-kicker">01</span>
+              <h3>Friendly coaching tone</h3>
               <p>
-                Break down healthy eating into small, understandable ideas that do not intimidate users.
+                NutriGuide avoids guilt-heavy messaging and explains healthier
+                choices in a way that feels encouraging.
               </p>
             </article>
             <article class="info-card">
-              <h3>Friendly experience</h3>
+              <span class="card-kicker">02</span>
+              <h3>Fast decision support</h3>
               <p>
-                Use a soft visual style, strong spacing, and clear text hierarchy to reduce friction.
+                Users can quickly ask what to eat, what to swap, or how to
+                balance a meal without digging through long articles.
               </p>
             </article>
             <article class="info-card">
-              <h3>Future chatbot space</h3>
+              <span class="card-kicker">03</span>
+              <h3>Embedded AI assistance</h3>
               <p>
-                Keep a clean section for the BotPress assistant while staying flexible for future automation.
+                The live BotPress chat sits inside the branded experience so
+                support feels like part of the product, not an add-on.
               </p>
             </article>
           </div>
@@ -116,35 +154,109 @@
         <section class="section section-band">
           <div class="split-layout">
             <div>
-              <p class="eyebrow">Suggested user journey</p>
-              <h2>Help visitors understand the site before they start asking questions.</h2>
+              <p class="eyebrow">User journey</p>
+              <h2>A simple flow from discovery to action.</h2>
               <p class="body-copy">
-                The homepage should introduce the purpose clearly, explain what the website can help with,
-                and then hand off naturally to the chatbot when they are ready to ask a question.
+                Visitors first understand what NutriGuide offers, then explore
+                useful examples, and finally move into interactive support when
+                they are ready for more personalised help.
               </p>
             </div>
 
             <div class="journey-card">
               <div class="journey-step">
                 <span>1</span>
-                <p>Learn what NutriGuide is about</p>
+                <p>Discover the brand and the problem it solves</p>
               </div>
               <div class="journey-step">
                 <span>2</span>
-                <p>See simple healthy eating topics</p>
+                <p>Preview how daily nutrition choices can improve</p>
               </div>
               <div class="journey-step">
                 <span>3</span>
-                <p>Open the BotPress assistant for help</p>
+                <p>Use the AI assistant for instant follow-up guidance</p>
               </div>
             </div>
           </div>
         </section>
 
+        <section class="section planner-section" id="planner">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive preview</p>
+            <h2>See how NutriGuide adapts to different nutrition goals.</h2>
+            <p>
+              This quick planner shows the kind of personalised, easy-to-scan
+              support the product can deliver before a user even opens chat.
+            </p>
+          </div>
+
+          <div class="planner-shell">
+            <div class="planner-controls" role="tablist" aria-label="Nutrition goals">
+              <button
+                class="planner-tab is-active"
+                type="button"
+                data-goal="energy"
+                aria-pressed="true"
+              >
+                More energy
+              </button>
+              <button class="planner-tab" type="button" data-goal="balance" aria-pressed="false">
+                Balanced eating
+              </button>
+              <button class="planner-tab" type="button" data-goal="focus" aria-pressed="false">
+                Better focus
+              </button>
+            </div>
+
+            <div class="planner-panel" aria-live="polite">
+              <p class="planner-label">Today&apos;s suggestion</p>
+              <h3 class="planner-title">Build a steadier, more energising plate.</h3>
+              <p class="planner-copy">
+                Start with slower-release carbs, add a strong protein source,
+                and include fruit or vegetables for fibre and micronutrients.
+              </p>
+
+              <div class="planner-grid">
+                <article>
+                  <span>Main idea</span>
+                  <strong class="planner-idea">Oats or whole-grain carbs</strong>
+                </article>
+                <article>
+                  <span>Protein</span>
+                  <strong class="planner-protein">Eggs, tofu, or yogurt</strong>
+                </article>
+                <article>
+                  <span>Smart add-on</span>
+                  <strong class="planner-addon">Banana, berries, or nuts</strong>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-card">
+            <div>
+              <p class="eyebrow">Ready to explore more?</p>
+              <h2>Explore the brand story and try the live assistant setup.</h2>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-primary" href="#planner">Use the planner</a>
+              <a class="button button-secondary" href="about.html">Meet the project</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="site-footer">
-        <p>NutriGuide is designed to make healthy eating guidance feel approachable and easy to use.</p>
+        <div>
+          <strong>NutriGuide</strong>
+          <p>Healthy guidance with a calmer, smarter digital experience.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
       </footer>
     </div>
 
@@ -174,10 +286,10 @@
             />
             <div>
               <p class="chat-panel-title">NutriGuide Assistant</p>
-              <p class="chat-panel-subtitle">Ask healthy eating questions anytime.</p>
+              <p class="chat-panel-subtitle">Ask about meals, swaps, or healthy routines.</p>
             </div>
           </div>
-          <button class="chat-close" type="button" aria-label="Close chat assistant">×</button>
+          <button class="chat-close" type="button" aria-label="Close chat assistant">&times;</button>
         </div>
 
         <iframe
