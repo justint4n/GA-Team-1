@@ -29,7 +29,7 @@ const sendWebhookEvent = async (eventName, details = {}) => {
 };
 
 if (chatToggle && chatPanel && chatClose) {
-  const setChatOpen = (isOpen) => {
+  const setChatOpen = (isOpen, { restoreFocus = true } = {}) => {
     chatPanel.hidden = !isOpen;
     chatToggle.classList.toggle("chat-toggle-hidden", isOpen);
     chatToggle.setAttribute("aria-hidden", String(isOpen));
@@ -45,10 +45,12 @@ if (chatToggle && chatPanel && chatClose) {
       return;
     }
 
-    chatToggle.focus();
+    if (restoreFocus) {
+      chatToggle.focus();
+    }
   };
 
-  setChatOpen(false);
+  setChatOpen(false, { restoreFocus: false });
 
   chatToggle.addEventListener("click", () => {
     const isOpen = chatPanel.hidden;
