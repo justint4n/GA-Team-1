@@ -203,6 +203,10 @@ select {
   align-items: stretch;
 }
 
+.hero-home {
+  grid-template-columns: 1fr;
+}
+
 .hero-copy,
 .hero-panel,
 .info-card,
@@ -231,6 +235,22 @@ select {
 .hero-copy,
 .page-hero {
   padding: clamp(1.8rem, 4vw, 3.3rem);
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -8% -28% auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(118, 176, 65, 0.18), transparent 70%);
+  pointer-events: none;
 }
 
 .hero-home .hero-copy {
@@ -309,6 +329,39 @@ h3 {
   max-width: 60ch;
   margin: 1.15rem 0 0;
   font-size: 1.05rem;
+}
+
+.about-actions {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 1.8rem;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.8rem;
+}
+
+.about-highlights article {
+  padding: 1rem 1.05rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+}
+
+.about-highlights strong {
+  display: block;
+  color: var(--brand-ink);
+}
+
+.about-highlights span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .hero-actions,
@@ -418,6 +471,14 @@ h3 {
   margin-bottom: 1.3rem;
 }
 
+.section-heading h2 {
+  margin-top: 0.45rem;
+}
+
+.section-heading p:last-child {
+  margin: 0.8rem 0 0;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -426,6 +487,7 @@ h3 {
 
 .info-card {
   padding: 1.5rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .info-card h3 {
@@ -434,6 +496,11 @@ h3 {
 
 .info-card p {
   margin: 0.8rem 0 0;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 54px rgba(19, 63, 39, 0.15);
 }
 
 .section-band {
@@ -453,6 +520,10 @@ h3 {
   padding: 1rem;
   background: var(--surface-strong);
   border: 1px solid var(--line);
+}
+
+.journey-card .button {
+  margin-top: 0.35rem;
 }
 
 .journey-step {
@@ -595,6 +666,45 @@ h3 {
 
 body[data-page="about"] .page-hero {
   margin-top: 1.1rem;
+}
+
+body[data-page="about"] .section {
+  padding-top: 1.25rem;
+  padding-bottom: 1.8rem;
+}
+
+.about-hero {
+  max-width: none;
+}
+
+.about-story,
+.about-telegram {
+  position: relative;
+}
+
+.about-story {
+  margin-top: 1rem;
+}
+
+.about-telegram {
+  margin-top: 1rem;
+}
+
+.about-story::before,
+.about-telegram::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.about-story::before {
+  background: linear-gradient(135deg, rgba(118, 176, 65, 0.08), rgba(255, 255, 255, 0));
+}
+
+.about-telegram::before {
+  background: linear-gradient(135deg, rgba(43, 135, 197, 0.08), rgba(255, 255, 255, 0));
 }
 
 .site-footer {
@@ -770,6 +880,7 @@ body[data-page="about"] .page-hero {
   .split-layout,
   .planner-shell,
   .brand-board,
+  .about-highlights,
   .hero-trust,
   .planner-grid {
     grid-template-columns: 1fr;
